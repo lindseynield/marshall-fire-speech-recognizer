@@ -1,0 +1,22 @@
+repos:
+- repo: https://github.com/pycqa/isort
+  rev: 5.8.0
+  hooks:
+    - id: isort
+      name: isort (python)
+    - id: isort
+      name: isort (cython)
+      types: [cython]
+    - id: isort
+      name: isort (pyi)
+      types: [pyi]
+
+- repo: https://github.com/python/black
+  rev: 22.3.0
+  hooks:
+    - id: black
+
+- repo: https://github.com/pycqa/flake8
+  rev: 3.9.2
+  hooks:
+    - id: flake8
